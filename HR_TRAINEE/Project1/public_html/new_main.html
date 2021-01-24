@@ -1,0 +1,785 @@
+                <!DOCTYPE html>
+                <html lang="en">
+                
+                <head>
+                    <!-- Required meta tags-->
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                    <meta name="description" content="Colorlib Templates">
+                    <meta name="author" content="Colorlib">
+                    <meta name="keywords" content="Colorlib Templates">
+                
+                    <!-- Title Page-->
+                    <title>EFU MTP | Application</title>
+                
+                    <!-- Icons font CSS-->
+                       
+                        <link href="resources/responsive/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+                    <link href="resources/responsive/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+                    <!-- Font special for pages-->
+                    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+                
+                    <!-- Vendor CSS-->
+                    <link href="resources/responsive/vendor/select2/select2.min.css" rel="stylesheet" media="all"/>
+                    <link href="resources/responsive/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all"/>
+                
+                    <!-- Main CSS-->
+                    <link href="resources/responsive/css/main.css" rel="stylesheet" media="all"/>
+                    
+                    <!--Css from firstpage -->
+                      <!--<link type="text/css" rel="stylesheet" href="resources/css/melon.datepicker.css"/>-->
+                     <script type="text/javascript" src="resources/js/jquery-3.1.1.js"></script>
+                            <link type="text/css" rel="stylesheet" href="resources/css/jquery-ui.css"/>
+                          <!--<link type="text/css" rel="stylesheet" href="resources/css/style.css"/>-->
+         <script language="JavaScript" src="resources/js/javascript.js"></script> 
+        <style  >
+        
+        input[type='file']
+       {
+       background-color: #2385c4;
+	border: 0;
+	color: #0c3d63;
+	cursor: pointer;
+	font-weight: 700;
+	/*margin: 1em 0 0 0;*/
+	padding: .6em;
+        
+          
+        }
+                 </style>
+                 <script>
+               document.addEventListener("DOMContentLoaded", function() {
+                 
+//                 const mq = window.matchMedia( "(max-width: 500px)" );
+//             if (mq)
+//            {
+//             document.getElementById("emailrow").style.marginTop = "-300px";
+//            }
+//           const   dq = window.matchMedia( "(min-width: 600px)" ); 
+//             if (dq)
+//            {
+             document.getElementById("emailrow").style.marginTop = "-180px";
+//            }
+            
+                 
+// document.getElementById("pq2").style.visibility='hidden';
+//  document.getElementById("pq3").style.visibility='hidden';
+//  document.getElementById("exp2").style.visibility='hidden';
+//  document.getElementById("tr2").style.visibility='hidden';
+ document.getElementById("rowlang2").style.visibility='hidden';
+ document.getElementById("rowlang3").style.visibility='hidden';
+ 
+});
+               
+                 function addmorelang()
+            { 
+           
+            var pq2=document.getElementById("rowlang2");
+            var pq3 =document.getElementById("rowlang3");
+            if (pq2.style.visibility == 'hidden')
+             {
+             pq2.style.visibility = 'visible';
+              document.getElementById("emailrow").style.marginTop = "-90px";
+             }
+            else {
+            pq3.style.visibility = 'visible';
+             document.getElementById("emailrow").style.marginTop = "";
+            }
+            }
+              function nickeyup(el)
+                    {
+   
+   
+                       if ((el.keyCode == 8) || (el.keyCode == 9 )||( el.keyCode == 27 )|| (el.keyCode == 65 && el.ctrlKey === true) )
+                                          { return ;}
+                      if( event.keyCode < 48 || event.keyCode > 57)
+                      {  el.value='';
+                      return false;
+                      }         
+                        var patt = new RegExp("(^[0-9+]{5}-[0-9+]{7}-[0-9]{1}$)");
+                          var res = patt.test(el.value);
+                      clearTimeout(timer);
+                     timer=setTimeout(function validate(){
+                     if (res){
+                        return true; 
+                      }
+                     else{el.value = ''; return false;}
+                       },100);
+
+                    }
+            
+                 </script>
+                 
+                </head>
+                 <body>
+                                <div class="page-wrapper bg-gra-03 p-t-130 p-b-100 font-poppins">
+                                  <div class="wrapper wrapper--w960">
+                                     <div class="card card-4">
+            
+               <div style="text-align: justify;">  <table > <tr style="float:left;"><td   style="float:left;"><div style="text-align: left; ">
+                      <a href="http://www.efuinsurance.com/">  <img alt="Efu Insurance LTD"  height="75" width="64" src="resources/images/logo_efu.png" title="Go To Home."/></a>
+                    </div></td><td   style="float:left;"></td>
+                   <td > <div style="margin-left:100%;  ">
+                      </div></td></tr></table></div>
+                    <center>
+                        <h3>
+                            Application Form
+                        </h3>
+                       
+                            <h4>
+                                <!--Management Trainee Program &ndash; 2017--> <!--changed from 2017 on the 22 of feb 2019-->
+                                Management Trainee Program &ndash; 2019
+                                
+                            </h4>
+                      
+                       <center>  <b><span id="date_time"></span></b> <p>&nbsp;</p>
+            <script type="text/javascript">window.onload = date_time('date_time');</script>
+                         </center> <table class="table9"  style="   font-size:14.0px ;text-align:justify;">
+                         <tr><td></td></tr> <tr><td></td></tr><tr><td>
+                          <label class="declarlbl" style=" overflow-x:auto; max-width:10px;">
+                                    Instructions :&nbsp; </label>
+                                 
+                   <p style=" min-width:5%;overflow-x:auto; ">. To apply please fill in necessary details and upload your Passport-Size photo.</p>
+                    <p style=" min-width:5%;overflow-x:auto; ">. Kindly fill this form to the best of your Knowledge. </p>
+                    <!--<p style="min-width:5%;text-align:justify;overflow-x:auto; ">&nbsp;&nbsp;.&nbsp;Your age should not exceed 27 years till the date of this application. </p>-->
+                  <p style="min-width:5%;text-align:justify;overflow-x:auto; ">. Name photo file before uploading.  </p>
+                  <p style="min-width:5%;text-align:justify;overflow-x:auto; ">. All&nbsp;<b style="color: Red; width:2%;">*</b>&nbsp;fields are mandatory . </p>
+                  <!--<p style="min-width:5%;text-align:justify;overflow-x:auto; ">    . Your photo file should be either png or jpeg.  </p>
+                  <p style="min-width:5%;text-align:justify;overflow-x:auto; ">  . Your photo file size can be up to 800 KB (KiloBytes).</p>-->
+                           
+                                    </td></tr>
+                                     <tr><td><label id="msgdisp"></label></td></tr> </table>
+                        
+                        <!--<p style=" font-size:11.0px ;">
+                           (Accepting from Karachi only)
+                        </p>-->
+                    </center>
+                                        <div class="card-body">
+                                            <!--<h2 class="title">Registration Form</h2>-->
+                      
+                                              <form method="POST">
+                              
+                           
+                                                <div class="row row-space">
+                                                   <div class="col-4">
+                                                    <div class="input-group">
+                                                     
+                                                    <label class="label">Applicant Name</label>
+                                                    </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-4">
+                                                    <div class="input-group">
+                                                     
+                                                    <input class="input--style-4" type="text" name="first_name" placeholder="First Name"/>
+                                                    </div>
+                                                    </div>
+                            <div class="col-4">
+                                <div class="input-group">
+                                    
+                                    <input class="input--style-4" type="text" name="last_name" placeholder="Last Name"/>
+                                </div>
+                            </div>
+                             <div class="col-4">
+                                <div class="input-group">
+                                    
+                                    <input class="input--style-4" type="text" placeholder="Mid Name" name="last_name"/>
+                                </div>
+                            </div>
+                        </div>
+                        
+                          <div class="row row-space">
+                        <div class="col-4">
+                                <div class="input-group"> 
+                              <label  for="APP_F_NAME"  class="label">
+                                Father's Name :&nbsp;
+                            </label> </div></div>
+                           <div class="col-4">
+                                <div class="input-group">  
+                            <input type="text"  id="APP_F_NAME" onkeypress="return fathercheck(event)"  class="input--style-4" 
+                              maxlength="40"  onfocus="hideprev()" onkeyup="return z(this)"  name="APP_F_NAME" placeholder="Father's Name"/>
+                         </div></div>
+                          <div class="col-4">
+                                <div class="input-group">  
+                            
+                         </div></div>
+                          <div class="col-4">
+                                <div class="input-group">  
+                            
+                         </div></div>
+                         </div>
+                       
+                           <div class="row row-space">
+                        <div class="col-4">
+                                <div class="input-group"> 
+                              <label  for="CNIC"  class="label">
+                                CNIC :&nbsp;
+                            </label> </div></div>
+                           <div class="col-4">
+                                <div class="input-group">  
+                            <input  type="text" maxlength="15" id="CNIC" name="CNIC" onfocus="hideprev()" 
+                            placeholder="xxxxx-xxxxxxxx"  onkeyup="nickeyup(this)"/>
+                         </div></div>
+                          <div class="col-4">
+                                <div class="input-group">  
+                            
+                         </div></div>
+                          <div class="col-4">
+                                <div class="input-group">  
+                            
+                         </div></div>
+                         </div>
+                         
+                            <div class="row row-space">
+                                                   <div class="col-4">
+                                                    <div class="input-group">
+                                                     
+                                                    <b style="color: Red;">*</b>
+                            <label   for="app_photo"  class="label">Applicant Picture :</label>
+                                                    </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-4">
+                                                    <div class="input-group">
+                                                   <input type="file" accept=".jpg,.jpeg,.png"  onfocus="hideprev()" title="Choose Picture" name="app_photo" id="app_photo"/>   
+                                                 
+                                                    </div>
+                                                    </div>
+                            <div class="col-4">
+                                <div class="input-group">
+                                    
+                                   
+                                </div>
+                            </div>
+                             <div class="col-4">
+                                <div class="input-group">
+                                    
+                                 
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row row-space">
+                          <div class="col-4">
+                                <div class="input-group">
+                           <label style=" font-size: 10.0pt;" class="label" for="dob">
+                                <b style="color: Red;">*</b>&nbsp; Date Of Birth :
+                            </label>
+                        
+                          </div></div>
+                            <div class="col-4">
+                                <div class="input-group">
+                               
+                                    <div class="input-group-icon">
+                                  <!--<input id="DOB" style="max-width:305px;"  onfocus="hideprev()"  class="input--style-4 js-datepicker" 
+                                  placeholder="29-MAR-17"  maxlength="9"   name="birthday"/>-->
+                                   <input class="input--style-4 js-datepicker" type="text" id="DOB" name="DOB"/>
+                                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                        <!--<input class="input--style-4 js-datepicker" type="text" name="birthday">-->
+                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i> 
+                                    </div>
+                                </div>
+                            </div>
+                              <div class="col-4">
+                                <div class="input-group">
+                                  <label class="label">Gender</label>
+                               
+                                </div>
+                                </div>  
+                                <div class="col-4">
+                                  <div class="input-group">
+                                 
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Male
+                                            <input id="male" value="M" checked="checked"  type="radio"   onfocus="hideprev()"  name="GENDER"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Female
+                                            <input type="radio"   id="female" value="F"  name="GENDER"   onfocus="hideprev()" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                             </div>
+                             
+                             <div class="row row-space">
+                             <div class="col-4">
+                                <div class="input-group">
+                                  <label class="label"> 
+                                           &nbsp;Address :</label>
+                           </div></div>
+                                 <div class="col-4">
+                                <div class="input-group">            
+                               
+                                 <input id="RES_ADD" name="RES_ADD" type="text"  maxlength="60"
+                              onkeyup="return z(this)"   onkeypress="return addcheck(event)"    class="input--style-4" 
+                              onfocus="hideprev()"    placeholder="Current Address"/>
+                          </div></div>
+                             <div class="col-4">
+                                <div class="input-group">            
+                               
+                                 <input id="PERM_ADD"   onfocus="hideprev()"  name="PERM_ADD" type="text" maxlength="60" 
+                      onkeypress="return addcheck(event)"    onkeyup="return z(this)"   class="input--style-4" placeholder="Permanent Address"/>
+                          </div></div>
+                            <div class="col-4">
+                              <div class="row row-space">
+                                   <div class="col-2">
+                                  <div class="input-group">
+                                    <div class="p-t-1">
+                                        <label class="radio-container label">Same
+                                          
+                                               <input  id="same"  type="radio"   onfocus="hideprev()" 
+                                           value="same"  onClick="toggle(this)"  name="addrad"/>
+                                            
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container label">Different
+                                           <input   onClick="toggle(this)" checked="checked" id="differ" 
+                                           value="differ" type="radio" onfocus="hideprev()" name="addrad"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                     </div>
+                                   </div>
+                                     </div>
+                                  </div>
+                           </div>
+                               </div>
+                               
+                                 <div class="row row-space">
+                        <div class="col-4">
+                                <div class="input-group"> 
+                              <label  for="CNIC"  class="label">
+                               Applicant City : 
+                            </label> </div></div>
+                           <div class="col-4">
+                                <div class="input-group">  
+                                  <select id="CITY_ID"   onfocus="hideprev()"  name="CITY_ID">
+                                            <% 
+              Connection con=null;
+              Statement state1=null;
+              
+           try{Class.forName("oracle.jdbc.driver.OracleDriver");
+            con = DriverManager.getConnection("jdbc:oracle:thin:@test.efuinsurance.com:1521:test","efu_gis", "test");    
+             state1 = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
+        ResultSet.CONCUR_READ_ONLY);}catch(Exception ex){}
+           String  qu = "select ct.CITY_ID,ct.CITY_NM from efu_mast.city ct order by ct.CITY_ID";
+            
+             ResultSet rs4=null;             
+             try{
+       rs4= state1.executeQuery(qu);
+                } 
+                catch(Exception ex){
+                out.println("There is something wrong with date query: " + ex);
+                }
+            while(rs4.next()){    
+   %>
+                                            <option value="<%= rs4.getString(1) %>">
+                                                <%= rs4.getString(2) %>
+                                            </option>
+                                            <%}con.close();%>
+                                        </select>
+                         </div></div>
+                          <div class="col-4">
+                                <div class="input-group">  
+                            
+                         </div></div>
+                          <div class="col-4">
+                                <div class="input-group">  
+                            
+                         </div></div>
+                         </div>
+                               
+                               
+                         
+                       <div class="row row-space">
+                        <div class="col-4">
+                                <div class="input-group">
+                           <label style=" font-size: 10.0pt;" class="label" >
+                                Language
+                            </label>
+                        
+                          </div></div> <div class="col-4">
+                                <div class="input-group">
+                           <label style=" font-size: 10.0pt;" class="label" >
+                             
+                            </label>
+                        
+                          </div></div> <div class="col-4">
+                                <div class="input-group">
+                           <label style=" font-size: 10.0pt;" class="label"  >
+                           
+                            </label>
+                        
+                          </div></div> <div class="col-4">
+                                <div class="input-group">
+                           <label style=" font-size: 10.0pt;" class="label"  >
+                           
+                            </label>
+                        
+                          </div></div>
+                          </div>
+                         
+                        <div class="row row-space" id="row-lang1">
+                            <div class="col-4">
+                                                    <div class="input-group">
+                                 <input style="width:80%;  float:right;" type="text"  onkeyup="return z(this)" 
+                                  class="input--style-4"
+                                 onkeypress="return wordcheck(event)"  maxlength="15" id="LANG_1" name="LANG_1"/>                                                
+ 
+                                                    </div>
+                                                    </div>
+                           <div class="col-4">
+                         <div class="row row-space">
+                                 <div class="col-2">
+                                   <div class="input-group">
+                           <label style=" font-size: 10.0pt;" class="label" >
+                               Speaking
+                            </label>
+                        
+                          </div>
+                                 </div>
+                                  <div class="col-2">
+                                  <div class="input-group">
+                                    <div class="p-t-1">
+                                        <label class="radio-container ">Avg
+                                           <input type="radio" value="0" id="savg" checked="checked" name="LANG1_SP"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Good
+                                            <input type="radio" id="sgood" value="1" name="LANG1_SP"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                         <label class="radio-container">Exc.
+                                            <input type="radio" id="sexc" value="2" name="LANG1_SP"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                                    
+                                    </div>
+                                   </div>
+                                   
+                                    </div>
+                                    
+                                </div>
+                                                    </div>
+                            <div class="col-4">
+               <div class="row row-space">
+                                 <div class="col-2">
+                                   <div class="input-group">
+                           <label style=" font-size: 10.0pt;" class="label" >
+                             Reading
+                            </label>
+                        
+                          </div>
+                                 </div>
+                                  <div class="col-2">
+                  <div class="input-group">
+                              <div class="p-t-1">
+                                        <label class="radio-container ">Avg
+                                            <input type="radio" value="0" id="ravg" checked="checked" name="LANG1_RD"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Good
+                                         <input type="radio" id="rgood" value="1" name="LANG1_RD"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                         <label class="radio-container">Exc.
+                                          <input type="radio" id="rexc" value="2" name="LANG1_RD"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                                    
+                                    </div>
+                                </div>
+                                          </div>   </div>  </div>  
+                                          
+                         <div class="col-4">
+                         <div class="row row-space">
+                                 <div class="col-2">
+                                   <div class="input-group">
+                           <label style=" font-size: 10.0pt;" class="label" >
+                             Writing
+                            </label>
+                        
+                          </div>
+                                 </div>
+                                  <div class="col-2">
+                         
+                 <div class="input-group">
+                                    <div class="p-t-1">
+                                        <label class="radio-container ">Avg
+                                       <input type="radio" value="0" id="wavg" checked="checked" name="LANG1_WR"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Good
+                                         <input type="radio" id="wgood" value="1" name="LANG1_WR"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                         <label class="radio-container">Exc.
+                                           <input type="radio" id="wexc" value="2" name="LANG1_WR"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                                    
+                                    </div>
+                                </div> 
+                                                    </div>    </div>    </div>  </div>              
+                              <div class="row row-space">
+                      <a id="add" style=" cursor: pointer; margin-bottom:10px;" onclick="addmorelang()">&nbsp;Add More . . .; </a>
+                     
+                      </div>
+                      
+                      
+                       <div class="row row-space" id="rowlang2"  >
+                            <div class="col-4">
+                                                    <div class="input-group">
+     <input style="width:80%;  float:right;" type="text"  onkeyup="return z(this)"
+      class="input--style-4"
+     onkeypress="return wordcheck(event)"  maxlength="15" id="LANG_2" name="LANG_2"/>                                                
+ 
+                                                    </div>
+                                                    </div>
+                           <div class="col-4">
+                
+                <div class="row row-space">
+                                 <div class="col-2">
+                                   <div class="input-group">
+                           <label style=" font-size: 10.0pt;" class="label" >
+                            Speaking
+                            </label>
+                        
+                          </div>
+                                 </div>
+                                  <div class="col-2">
+                 <div class="input-group">
+                                    <div class="p-t-1">
+                                        <label class="radio-container ">Avg
+                                           <input type="radio" value="0" id="savg2" checked="checked" name="LANG2_SP"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Good
+                                            <input type="radio" id="sgood2" value="1" name="LANG2_SP"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                         <label class="radio-container">Exc.
+                                            <input type="radio" id="sexc2" value="2" name="LANG2_SP"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                                    
+                                    </div>
+                                </div>
+                                                    </div></div></div>
+                            <div class="col-4">
+                              <div class="row row-space">
+                                 <div class="col-2">
+                                   <div class="input-group">
+                           <label style=" font-size: 10.0pt;" class="label" >
+                              Reading
+                            </label>
+                        
+                          </div>
+                                 </div>
+                              <div class="col-2">
+                 <div class="input-group">
+                                    <div class="p-t-1">
+                                        <label class="radio-container ">Avg
+                                            <input type="radio" value="0" id="ravg2" checked="checked" name="LANG2_RD"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Good
+                                         <input type="radio" id="rgood2" value="1" name="LANG2_RD"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                         <label class="radio-container">Exc.
+                                          <input type="radio" id="rexc2" value="2" name="LANG2_RD"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                                    
+                                    </div>
+                                </div>
+                                          </div>  </div></div>
+                                          
+                         <div class="col-4">
+                           <div class="row row-space">
+                                 <div class="col-2">
+                                   <div class="input-group">
+                           <label style=" font-size: 10.0pt;" class="label" >
+                              Writing
+                            </label>
+                        
+                          </div>
+                                 </div>
+                              <div class="col-2">
+                 <div class="input-group">
+                                    <div class="p-t-1">
+                                        <label class="radio-container ">Avg
+                                       <input type="radio" value="0" id="wavg2" checked="checked" name="LANG2_WR"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Good
+                                         <input type="radio" id="wgood2" value="1" name="LANG2_WR"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                         <label class="radio-container">Exc.
+                                           <input type="radio" id="wexc2" value="2" name="LANG2_WR"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                                    
+                                    </div>
+                                </div> 
+                                                    </div>    </div>   </div></div>
+                      
+                        <div class="row row-space" id="rowlang3"    >
+                            <div class="col-4">
+                                                    <div class="input-group">
+     <input style="width:80%;  float:right;" type="text"  class="input--style-4"
+     onkeyup="return z(this)"  onkeypress="return wordcheck(event)"  maxlength="15" id="LANG_2" name="LANG_2"/>                                                
+ 
+                                                    </div>
+                                                    </div>
+                           <div class="col-4">
+                           
+                             <div class="row row-space">
+                                 <div class="col-2 lbl">
+                                   <div class="input-group  ">
+                           <label style=" font-size: 10.0pt;" class="label "  >
+                              Speaking
+                            </label>
+                        
+                          </div>
+                                 </div>
+                              <div class="col-2">
+                 <div class="input-group">
+                                    <div  >
+                                        <label class="radio-container ">Avg
+                                           <input type="radio" value="0" id="savg3" checked="checked" name="LANG3_SP"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Good
+                                            <input type="radio" id="sgood3" value="1" name="LANG3_SP"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                         <label class="radio-container">Exc.
+                                            <input type="radio" id="sexc3" value="2" name="LANG3_SP"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                                    
+                                    </div>
+                                </div>
+                                                    </div></div></div>
+                            <div class="col-4">
+                              <div class="row row-space">
+                                 <div class="col-2">
+                                   <div class="input-group">
+                           <label style=" font-size: 10.0pt;" class="label" >
+                              Reading
+                            </label>
+                        
+                          </div>
+                                 </div>
+                              <div class="col-2">
+                 <div class="input-group">
+                                    <div class="p-t-1">
+                                        <label class="radio-container ">Avg
+                                            <input type="radio" value="0" id="ravg3" checked="checked" name="LANG3_RD"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Good
+                                         <input type="radio" id="rgood3" value="1" name="LANG3_RD"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                         <label class="radio-container">Exc.
+                                          <input type="radio" id="rexc3" value="2" name="LANG3_RD"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                                    
+                                    </div>
+                                </div>
+                                          </div>  </div></div>
+                                          
+                         <div class="col-4">
+                           <div class="row row-space">
+                                 <div class="col-2">
+                                   <div class="input-group">
+                           <label style=" font-size: 10.0pt;" class="label" >
+                              Writing
+                            </label>
+                        
+                          </div>
+                                 </div>
+                              <div class="col-2">
+                 <div class="input-group">
+                                    <div class="p-t-1">
+                                        <label class="radio-container ">Avg
+                                       <input type="radio" value="0" id="wavg3" checked="checked" name="LANG3_WR"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Good
+                                         <input type="radio" id="wgood3" value="1" name="LANG3_WR"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                         <label class="radio-container">Exc.
+                                           <input type="radio" id="wexc3" value="2" name="LANG3_WR"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                                    
+                                    </div>
+                                </div> 
+                                                    </div> </div></div>   </div>   
+                       
+                       
+                        <div class="row row-space emailrow" id="emailrow">
+                        <div class="col-4">
+                                  <div class="input-group">  <label class="label">Email</label></div></div>
+                            <div class="col-4">
+                                <div class="input-group">
+                                 
+                                    <input class="input--style-4" type="email" name="email">
+                                </div>
+                            </div>
+                            <div class="col-4"> <div class="input-group"><label class="label"> Phone Number</label>  </div></div>
+                            <div class="col-4">
+                                 <div class="input-group">
+                                     <input class="input--style-4" type="text" name="phone">
+                                </div>
+                            </div>
+                        </div>
+                      
+                         
+                        
+                        <!--<div class="input-group">
+                            <label class="label">Subject</label>
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="subject">
+                                    <option disabled="disabled" selected="selected">Choose option</option>
+                                    <option>Subject 1</option>
+                                    <option>Subject 2</option>
+                                    <option>Subject 3</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>-->
+                        
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                        </div>
+                  <!--  </div> -->  <!-- end of first panel  -->
+                  <!--   </div>  --> <!--end of all panels do this  -->
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
